@@ -1,0 +1,58 @@
+const theme = {
+  colors: {
+    primaryBgColor: '#F5F5F5',
+    secondBgColor: '#eef3f8',
+    thirdBgColor: '#fff',
+    fourthBgColor: '#f9fafb',
+    primaryTextColor: '#757575',
+    secondTextColor: '#0a66c2',
+    thirdTextColor: '#2977c9',
+    fourthTextColor: '#fff',
+    boldTextColor: '#434649',
+    primaryAccentColor: '#0A66C2',
+    bordeFontrColor: '#000000E6',
+    placeHolderColor: '#958b7b',
+  },
+  breakpoints: {
+    mobile: '478px',
+    tablet: '768px',
+    desktop: '1128px',
+  },
+  spacing: value => `${4 * value}px`,
+  space: [0, 2, 4, 8, 15, 32, 60, 94, 128, 256],
+  fontSizes: {
+    xxxxs: '10px',
+    xxxs: '12px',
+    xxs: '14px',
+    xs: '16px',
+    s: '18px',
+    m: '22px',
+    l: '24px',
+    xl: '26px',
+    xxl: '28px',
+    xxxl: '36px',
+    xxxxl: '40px',
+    xxxxxl: '44px',
+  },
+  fontWeight: {
+    thin: 200,
+    сommon: 400,
+    normal: 500,
+    regular: 600,
+    bolt: 700,
+    superBolt: 900,
+  },
+  radii: {
+    none: '0',
+    small: '2px',
+    normal: '4px',
+    round: '50%',
+    quarter: '24px',
+  },
+  fontFamily: {
+    raleway: "'Raleway', sans-serif",
+    arial: 'Arial,sans-serif',
+  },
+}
+
+export default theme
