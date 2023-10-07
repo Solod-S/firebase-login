@@ -52,7 +52,8 @@ async function handleNewUser(email, password, userPhotoURL, name, uid) {
       email: email,
       displayName: name ? name : '',
       photoURL: userPhotoURL,
-      subscription: 'free',
+      subscription: 'Free',
+      gender: 'Other',
     }
 
     fsbase.collection('users').add(newUser)
@@ -77,7 +78,8 @@ async function handleNewUser(email, password, userPhotoURL, name, uid) {
       email: email,
       displayName: displayName ? displayName : '',
       photoURL,
-      subscription: 'free',
+      subscription: 'Free',
+      gender: 'Other',
     }
 
     fsbase.collection('users').add(newUser)

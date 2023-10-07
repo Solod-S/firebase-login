@@ -1,4 +1,5 @@
 import { useDispatch } from 'react-redux'
+
 import { googleLogIn } from 'redux/auth/authOperation.js'
 
 import { Form, SocialBtn, google } from './SocialLogin.styled'
@@ -21,7 +22,7 @@ function SocialLogin() {
   return (
     <Form id="social_login">
       <SocialBtn onClick={() => handleLogIn('google')}>
-        <img src={google} alt="google" /> Sign in with Google
+        <img src={google} alt="google" /> Login with Google
       </SocialBtn>
     </Form>
   )

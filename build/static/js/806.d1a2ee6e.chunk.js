@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkcreate_react_app_routing_styled_system=self.webpackChunkcreate_react_app_routing_styled_system||[]).push([[806],{3806:function(e,t,s){s.r(t);var r=s(7088),u=s(3329);t.default=function(){return(0,u.jsx)(r.u3,{})}}}]);
+//# sourceMappingURL=806.d1a2ee6e.chunk.js.map

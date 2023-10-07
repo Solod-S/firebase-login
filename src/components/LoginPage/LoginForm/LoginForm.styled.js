@@ -1,10 +1,11 @@
 import styled from 'styled-components'
-import { BsFillPersonFill } from 'react-icons/bs'
+import { Form, Field, ErrorMessage } from 'formik'
 import { MdClose } from 'react-icons/md'
 import { RiLockPasswordFill } from 'react-icons/ri'
-import { Form, Field, ErrorMessage } from 'formik'
+import { IoIosMailOpen } from 'react-icons/io'
 
 export const Error = styled(ErrorMessage)`
+  font-size: 12px;
   color: red;
 `
 export const ErrorWrapper = styled.div`
@@ -21,7 +22,7 @@ export const PasswordIcon = styled(RiLockPasswordFill)`
   transition: fill 250ms linear;
 `
 
-export const NameIcon = styled(BsFillPersonFill)`
+export const NameIcon = styled(IoIosMailOpen)`
   position: absolute;
   top: 50%;
   left: 0;

@@ -5,6 +5,7 @@ const theme = {
     thirdBgColor: '#fff',
     fourthBgColor: '#f9fafb',
     primaryTextColor: '#757575',
+    footerColor: '#838383',
     secondTextColor: '#0a66c2',
     thirdTextColor: '#2977c9',
     fourthTextColor: '#fff',

@@ -1,15 +1,9 @@
 import { useDispatch } from 'react-redux'
+
 import { logOut } from 'redux/auth/authOperation'
 import { clearSubscription } from '../../../redux/appData/appDataSlice'
 
-import {
-  Header,
-  Navigation,
-  MenuLink,
-  MenuList,
-  MenuItem,
-  SignOut,
-} from './AppBar.styled'
+import { Header, Navigation, MenuLink, MenuList, MenuItem, SignOut } from './AppBar.styled'
 
 const AppBar = () => {
   const handleLogOut = () => {
@@ -25,7 +19,7 @@ const AppBar = () => {
             <MenuLink to="/">Home</MenuLink>
           </MenuItem>
           <MenuItem>
-            <MenuLink to="/contacts">Contacts</MenuLink>
+            <MenuLink to="/about">About</MenuLink>
           </MenuItem>
         </MenuList>
         <SignOut onClick={() => handleLogOut()}>Sign Out</SignOut>

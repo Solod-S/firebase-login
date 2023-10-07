@@ -8,6 +8,14 @@ const GlobalStyle = createGlobalStyle`
   --toastify-color-error: red;
 }
 
+
+.disabled-link {
+  pointer-events: none; 
+  /* color: gray;  */
+  text-decoration: none; 
+  /* cursor: not-allowed;  */
+}
+
 h1,
 h2,
 h3,

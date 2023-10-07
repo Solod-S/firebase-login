@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/326.8afbada8.chunk.js","mappings":"oMAKA,UAHkB,WAChB,OAAOA,EAAAA,EAAAA,KAACC,EAAAA,GAAS,GACnB,C","sources":["pages/LoginPage/LoginPage.js"],"sourcesContent":["import { LoginMain } from 'components'\r\n\r\nconst LoginPage = () => {\r\n  return <LoginMain />\r\n}\r\nexport default LoginPage\r\n"],"names":["_jsx","LoginMain"],"sourceRoot":""}

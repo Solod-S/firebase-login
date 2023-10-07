@@ -16,7 +16,9 @@ root.render(
   <React.StrictMode>
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
-        <BrowserRouter basename="firebase-login">
+        <BrowserRouter
+        // basename="firebase-login"
+        >
           <ThemeProvider theme={theme}>
             <App />
             <GlobalStyle />

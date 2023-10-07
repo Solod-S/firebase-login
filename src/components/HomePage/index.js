@@ -1,5 +1,5 @@
 import HomeMain from './HomeMain/HomeMain'
-import MainSide from './MainSide/MainSide'
-import UserInfoForm from './UserInfoForm/UserInfoForm'
+import UserCardEditor from './UserCardEditor/UserCardEditor'
+import UserCard from './UserCard/UserCard'
 
-export { HomeMain, MainSide, UserInfoForm }
+export { HomeMain, UserCardEditor, UserCard }

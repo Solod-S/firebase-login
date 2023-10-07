@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/806.d1a2ee6e.chunk.js","mappings":"oMAKA,UAHiB,WACf,OAAOA,EAAAA,EAAAA,KAACC,EAAAA,GAAQ,GAClB,C","sources":["pages/HomePage/HomePage.js"],"sourcesContent":["import { HomeMain } from 'components'\r\n\r\nconst HomePage = () => {\r\n  return <HomeMain />\r\n}\r\nexport default HomePage\r\n"],"names":["_jsx","HomeMain"],"sourceRoot":""}

@@ -1,4 +1,5 @@
 import firebase from 'firebase'
+
 const apiKey = process.env.REACT_APP_API_KEY
 
 // Import the functions you need from the SDKs you need
