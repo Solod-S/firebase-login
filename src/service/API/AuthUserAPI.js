@@ -1,6 +1,6 @@
 import { auth, provider, fsbase } from 'fBase/fBase'
 
-async function googleLogIn(credentials) {
+async function googleLogIn() {
   try {
     const { user } = await auth.signInWithPopup(provider)
     const { email, displayName, photoURL, uid } = user
@@ -60,10 +60,7 @@ async function handleNewUser(email, password, userPhotoURL, name, uid) {
 
     return newUser
   } else {
-    const userCredential = await auth.createUserWithEmailAndPassword(
-      email,
-      password
-    )
+    const userCredential = await auth.createUserWithEmailAndPassword(email, password)
     const { user } = userCredential
 
     await user.updateProfile({
@@ -109,10 +106,7 @@ async function updateUserData(data) {
 
 async function findUserByEmail(email) {
   try {
-    const querySnapshot = await fsbase
-      .collection('users')
-      .where('email', '==', email)
-      .get()
+    const querySnapshot = await fsbase.collection('users').where('email', '==', email).get()
 
     if (!querySnapshot.empty) {
       return querySnapshot.docs[0]
@@ -124,11 +118,4 @@ async function findUserByEmail(email) {
   }
 }
 
-export {
-  googleLogIn,
-  logOut,
-  emailLogIn,
-  emailSignUp,
-  handleNewUser,
-  updateUserData,
-}
+export { googleLogIn, logOut, emailLogIn, emailSignUp, handleNewUser, updateUserData }

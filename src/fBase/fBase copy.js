@@ -1,5 +1,4 @@
 import firebase from 'firebase'
-
 const apiKey = process.env.REACT_APP_API_KEY
 const { REACT_APP_VAPID_KEY } = process.env
 // Import the functions you need from the SDKs you need
@@ -12,7 +11,7 @@ const firebaseConfig = {
   appId: '1:836565124543:web:b5d6acfadc949a45c9cd0a',
 }
 
-firebase.initializeApp(firebaseConfig)
+const firebaseApp = firebase.initializeApp(firebaseConfig)
 const fsbase = firebase.firestore()
 const auth = firebase.auth()
 const provider = new firebase.auth.GoogleAuthProvider()
@@ -33,12 +32,4 @@ const generateToken = async () => {
   }
 }
 
-const onMessageListener = () =>
-  new Promise(resolve => {
-    messaging.onMessage(messaging, payload => {
-      console.log('onMessageListener', payload)
-      resolve(payload)
-    })
-  })
-
-export { auth, provider, storage, fsbase, messaging, generateToken, onMessageListener }
+export { auth, provider, storage, fsbase }

@@ -1,5 +1,5 @@
 import UserRoutes from './UserRoutes'
-
+import * as serviceWorker from './serviceWorker'
 function App() {
   return (
     <>
@@ -8,3 +8,5 @@ function App() {
   )
 }
 export default App
+
+serviceWorker.register(`/firebase-messaging-sw.js`)

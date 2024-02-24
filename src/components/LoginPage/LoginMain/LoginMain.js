@@ -37,9 +37,7 @@ const LoginMain = () => {
         theme="light"
       />
       <Nav>
-        <Link path="/">
-          <img src={logo} alt="logo" width="100" />
-        </Link>
+        <Link path="/">{/* <img src={logo} alt="logo" width="100" /> */}</Link>
         <div>
           <Joint onClick={() => handleForm(<RegistrationForm onClose={closeModal} />)}>Joint now</Joint>
           <SignIn onClick={() => handleForm(<LoginForm onClose={closeModal} />)}>Login</SignIn>
@@ -49,7 +47,7 @@ const LoginMain = () => {
       <Section>
         <ModalWindow isOpen={isOpen} onClose={closeModal} component={form} />
         <Hero>
-          <h1>Welcome to my Firebase auth project.</h1>
+          {/* <h1>Welcome to my Firebase auth project.</h1> */}
           <img style={{ maxWidth: '100%' }} src={hero} alt="hero" />
         </Hero>
         <SocialLogin />
